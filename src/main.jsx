@@ -4,6 +4,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import HomePage from "./pages/HomePage"
 import Company from './components/Company';
 import Apple from './components/Apple'
+import CpAll from './components/CpAll';
+import Minion from './components/Minion'
+import Resident from './components/Resident';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,31 @@ const router = createBrowserRouter([
   {
     path: "/Company/Apple",
     element: <Apple />
+  },
+
+  {
+    path: "/Company/CpAll",
+    element: <CpAll />
+  },
+
+  {
+    path: "/Company/Minion",
+    element: <Minion />
+  },
+
+  {
+    path: "/Company/Apple/Resident",
+    element: <Resident />
+  },
+
+  {
+    path: "/Company/CpAll/Resident",
+    element: <Resident />
+  },
+
+  {
+    path: "/Company/Minion/Resident",
+    element: <Resident />
   }
 
 

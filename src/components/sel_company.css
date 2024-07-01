@@ -1,7 +1,14 @@
+#root,.com-text{
+    font-size: 18px;
+}
+
 .dropbtn{
-
     font-size: 16px;
+    border-radius: 50px;
+    border: solid 1px black;
 
+    margin-top: -10px;
+    margin-left: 5px;
 }
 
 .sel{
@@ -19,10 +26,13 @@ span{
 
 .dropdown-content{
     background-color: #f9f9f9;
-    padding: 12px 16px;
 
     display: none;
     position: absolute;
+
+    padding: 5px 10px;
+
+    margin-left: 10px;
     
     z-index: 1;
 }

@@ -10,11 +10,21 @@ function Company() {
         navigate("Apple")
     }
 
+    const clickCPALL = async() =>{
+        navigate("CpAll")
+    }
+
+    const clickMinion = async() =>{
+        navigate("Minion")
+    }
+
     return (
         
             <div class="company-container">
 
-                <p>Your Company</p>
+                <div class="ctext-container">
+                    <p class="com-text">Your Company</p>
+                </div>
 
                 <div class="dropdown">
                     <button class="dropbtn">
@@ -26,8 +36,8 @@ function Company() {
                     
                     <div class="dropdown-content">
                         <a href="" onClick={clickapple}>Apple</a>
-                        <a href="">CPALL</a>
-                        <a href="">Minion</a>
+                        <a href="" onClick={clickCPALL}>CPALL</a>
+                        <a href="" onClick={clickMinion}>Minion</a>
                     </div>
                 </div>
 

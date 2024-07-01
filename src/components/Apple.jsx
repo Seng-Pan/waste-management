@@ -1,12 +1,26 @@
 import React from 'react'
 import logo from "../assets/recyglo_logo.png"
 import { FaArrowDown } from "react-icons/fa6"
+import { FaArrowAltCircleLeft } from "react-icons/fa"
+import { useNavigate } from 'react-router-dom'
 import './Apple.css'
 
 function Apple() {
+    const navigate = useNavigate();
+
+    const clickbackarrow = async() =>{
+        navigate("/Company")
+    }
+
+    const clickeatery = async() =>{
+        navigate("Resident")
+    }
 
     return (
         <div class="apple-container">
+            <div class="back-arrow" onClick={clickbackarrow}>
+                <FaArrowAltCircleLeft />
+            </div>
             <img src={logo} alt="Logo" class="logo" />
 
             <div class="wrap-text">
@@ -33,11 +47,11 @@ function Apple() {
                                 </button>
 
                                 <div class="dropdown-content">
-                                    <a href="">Waste 1</a>
-                                    <a href="">Waste 2</a>
-                                    <a href="">Waste 3</a>
+                                    <a href="" class="apple-content" onClick={clickeatery}>Eatery</a>
+                                    <a href="" class="apple-content" onClick={clickeatery}>Resident</a>               
                                 </div>
                             </div>
+
                         </div>
                     </div>
 

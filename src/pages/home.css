@@ -1,5 +1,7 @@
-body {
+#root,body {
     height: 100vh;
+    width: 100%;
+
     font-size: 18px;
     font-family: Arial;
     background-color: #dff0d8;
@@ -7,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    
     margin: 0;
 }
 
