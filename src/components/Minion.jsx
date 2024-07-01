@@ -8,60 +8,60 @@ import './Apple.css'
 function Minion() {
     const navigate = useNavigate();
 
-    const clickbackarrow = async() =>{
+    const clickbackarrow = async () => {
         navigate("/Company")
     }
 
-    const clickeatery = async() =>{
+    const clickeatery = async () => {
         navigate("Resident")
     }
 
-  return (
-    <div class="apple-container">
+    return (
+        <div class="apple-container">
 
-        <div class="back-arrow" onClick={clickbackarrow}>
-            <FaArrowAltCircleLeft />
-        </div>
-
-        <img src={logo} alt="Logo" class="logo" />
-
-        <div class="wrap-text">
-            <div class="header">
-                <p>Minion</p>
+            <div class="back-arrow" onClick={clickbackarrow}>
+                <FaArrowAltCircleLeft />
             </div>
 
-            <form class='form'>
-                <div class='form-section'>
-                    <div class="lb-formgp">
-                        <label for="employee-name">Employee name</label>
-                        <input type="text" id="employee-name" class="input" />
-                    </div>
+            <img src={logo} alt="Logo" class="logo" />
 
-                    <div class="form-group">
-                        <p>Comp.Type</p>
+            <div class="wrap-text">
+                <div class="header">
+                    <p>Minion</p>
+                </div>
 
-                        <div class="dropdown">
-                            <button class="dropbtn">
-                                <div class="sel">
-                                    <span>Select</span>
-                                    <FaArrowDown />
+                <form class='form'>
+                    <div class='form-section'>
+                        <div class="lb-formgp">
+                            <label for="employee-name">Employee name</label>
+                            <input type="text" id="employee-name" class="input" />
+                        </div>
+
+                        <div class="form-group">
+                            <p>Comp.Type</p>
+
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <div class="sel">
+                                        <span>Select</span>
+                                        <FaArrowDown />
+                                    </div>
+                                </button>
+
+                                <div class="dropdown-content">
+                                    <a href="" onClick={clickeatery}>Eatery</a>
+                                    <a href="" onClick={clickeatery}>Resident</a>
                                 </div>
-                            </button>
-
-                            <div class="dropdown-content">
-                                <a href="" onClick={clickeatery}>Eatery</a>
-                                <a href="" onClick={clickeatery}>Resident</a>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <button class="next-button">Next</button>
-            </form>
+                    <button class="next-button">Next</button>
+                </form>
+            </div>
+
         </div>
-
-    </div>
-  )
+    )
 }
 
 export default Minion

@@ -1,15 +1,15 @@
-.wrap-text{
+.wrap-text {
     margin-top: 15%;
 }
 
-.back-arrow{
+.back-arrow {
     float: left;
 
     margin-top: 30px;
     margin-left: 20px;
 }
 
-.back-arrow:hover{
+.back-arrow:hover {
     background-color: #9CAD87;
     text-align: center;
 
@@ -19,13 +19,13 @@
     cursor: pointer;
 }
 
-.logo{
+.logo {
     width: 50px;
     height: 50px;
 
     float: right;
-    
-    margin-top: 15px; 
+
+    margin-top: 15px;
     margin-right: 10px;
 
 }
@@ -44,23 +44,23 @@ p {
     align-items: center;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 15px;
 }
 
-label{
+label {
     font-size: 14px;
     margin-bottom: -10px;
     display: block;
 }
 
-.input{
+.input {
     font-size: 14px;
     width: 200px;
 
@@ -68,27 +68,27 @@ label{
     border: 1px solid #ccc;
 
     margin-top: 27px;
-    
+
 }
 
-.lb-formgp{
+.lb-formgp {
     margin-top: 20px;
 }
 
-.apple-content{
+.apple-content {
     font-size: 5px;
 }
 
-.form-section{
+.form-section {
     display: flex;
     align-items: center;
 }
 
-.form-group{
-    margin:30px 20px;
+.form-group {
+    margin: 30px 20px;
 }
 
-.next-button{
+.next-button {
     width: 20%;
     height: 30px;
 
@@ -98,7 +98,8 @@ label{
     margin-top: 20px;
 }
 
-#root,.apple-container{
+#root,
+.apple-container {
     height: 100vh;
     width: 100%;
 
@@ -107,30 +108,35 @@ label{
 
 @media (max-width: 1200px) {
     .logo {
-        margin-left: 100px; /* Adjust margin-left for screens <= 1200px */
+        margin-left: 100px;
+        /* Adjust margin-left for screens <= 1200px */
     }
 }
 
 @media (max-width: 992px) {
     .logo {
-        margin-left: 800px; /* Adjust margin-left for screens <= 992px */
+        margin-left: 800px;
+        /* Adjust margin-left for screens <= 992px */
     }
 }
 
 @media (max-width: 768px) {
     .logo {
-        margin-left: 600px; /* Adjust margin-left for screens <= 768px */
+        margin-left: 600px;
+        /* Adjust margin-left for screens <= 768px */
     }
 }
 
 @media (max-width: 576px) {
     .logo {
-        margin-left: 470px; /* Adjust margin-left for screens <= 576px */
+        margin-left: 470px;
+        /* Adjust margin-left for screens <= 576px */
     }
 }
 
 @media (max-width: 400px) {
     .logo {
-        margin-left: 300px; /* Adjust margin-left for screens <= 400px */
+        margin-left: 300px;
+        /* Adjust margin-left for screens <= 400px */
     }
 }

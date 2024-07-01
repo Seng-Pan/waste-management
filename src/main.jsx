@@ -7,11 +7,12 @@ import Apple from './components/Apple'
 import CpAll from './components/CpAll';
 import Minion from './components/Minion'
 import Resident from './components/Resident';
+import Result from './pages/Result';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />
+    element: <Result />
   },
 
   {

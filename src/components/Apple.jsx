@@ -8,11 +8,11 @@ import './Apple.css'
 function Apple() {
     const navigate = useNavigate();
 
-    const clickbackarrow = async() =>{
+    const clickbackarrow = async () => {
         navigate("/Company")
     }
 
-    const clickeatery = async() =>{
+    const clickeatery = async () => {
         navigate("Resident")
     }
 
@@ -48,7 +48,7 @@ function Apple() {
 
                                 <div class="dropdown-content">
                                     <a href="" class="apple-content" onClick={clickeatery}>Eatery</a>
-                                    <a href="" class="apple-content" onClick={clickeatery}>Resident</a>               
+                                    <a href="" class="apple-content" onClick={clickeatery}>Resident</a>
                                 </div>
                             </div>
 
