@@ -12,7 +12,7 @@ import Result from './pages/Result';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Result />
+    element: <HomePage />
   },
 
   {
@@ -48,8 +48,22 @@ const router = createBrowserRouter([
   {
     path: "/Company/Minion/Resident",
     element: <Resident />
-  }
+  },
 
+  {
+    path: "/Company/Apple/Resident/Result",
+    element: <Result />
+  },
+
+  {
+    path: "/Company/CpAll/Resident/Result",
+    element: <Result />
+  },
+
+  {
+    path: "/Company/Minion/Resident/Result",
+    element: <Result />
+  }
 
 ])
 

@@ -12,6 +12,10 @@ function Resident() {
         navigate("/Company/Apple")
     }
 
+    const result = async () =>{
+        navigate("/Company/Apple/Resident/Result")
+    }
+
 
     return (
         <div class="resident-container">
@@ -65,7 +69,7 @@ function Resident() {
                 <div class="preview-box">Electric Bill Preview</div>
             </div>
 
-            <button class="nextbtn">Next</button>
+            <button onClick={result} class="nextbtn">Next</button>
 
         </div>
     )
